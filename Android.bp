@@ -1,0 +1,21 @@
+// GrapheneOS Apps — privileged app store for installing sandboxed Google Play
+// Forked from https://github.com/GrapheneOS/Apps (MIT license)
+// Points at apps.grapheneos.org repo which mirrors GmsCore, Play Store, GSF
+
+android_app_import {
+    name: "GrapheneOSApps",
+    apk: "prebuilt/GrapheneOSApps.apk",
+    certificate: "platform",
+    privileged: true,
+    product_specific: true,
+    required: [
+        "privapp-permissions-app.grapheneos.apps.xml",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-app.grapheneos.apps.xml",
+    src: "privapp-permissions-app.grapheneos.apps.xml",
+    sub_dir: "permissions",
+    product_specific: true,
+}

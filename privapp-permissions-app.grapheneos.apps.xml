@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Privileged permissions for GrapheneOS Apps (app.grapheneos.apps).
+     Enables silent app installation for sandboxed Google Play components.
+-->
+<permissions>
+    <privapp-permissions package="app.grapheneos.apps">
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.QUERY_ALL_PACKAGES" />
+        <permission name="android.permission.ENFORCE_UPDATE_OWNERSHIP" />
+    </privapp-permissions>
+</permissions>
