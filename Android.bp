@@ -8,6 +8,10 @@ android_app_import {
     certificate: "platform",
     privileged: true,
     product_specific: true,
+    optional_uses_libs: [
+        "androidx.window.extensions",
+        "androidx.window.sidecar",
+    ],
     required: [
         "privapp-permissions-app.grapheneos.apps.xml",
     ],
